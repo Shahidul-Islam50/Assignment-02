@@ -1,0 +1,377 @@
+/* responsive styles file
+
+/* navbar responsive */
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+
+    nav {
+        /* background: rgba(0, 0, 0, 0.796); */
+        height: 80px;
+        width: 100%;
+
+    }
+
+    label.logo {
+        color: #E6533C;
+        font-style: italic;
+        font-size: 25px;
+        line-height: 80px;
+        padding: 0 10px;
+        font-weight: bold;
+        margin-left: 40px;
+        overflow-y: hidden;
+    }
+
+    nav ul li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+        margin-right: 40px;
+    }
+
+
+
+
+}
+/* smaller device styles */
+@media screen and (max-width: 576px) {
+    body{
+        /* max-width: 1000px; */
+        overflow-x: hidden;
+    }
+    nav{
+        /* max-width: 1440px; */
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        border: 2px solid aquamarine;
+        padding: 5px;
+        border-radius: 5px;
+        background: blue;
+        color: white;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: black;
+        opacity: 90%;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .checkbtn {
+        display: block;
+
+
+    }
+
+    nav ul li a {
+        /* font-size: 16px; */
+        font-size: 30px;
+    }
+
+    label.logo {
+        /* font-size: 30px;
+        padding-left: 50px; */
+        font-size: 18px;
+        padding-left: 24px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* nav section end here */
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    .display-flex {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+
+        /* justify-content: space-between; */
+        align-items: center;
+        /* margin-top: 40px; */
+        /* background: rgba(0, 0, 0, 0.902); */
+        width: 100%;
+        height: 100vh;
+        /* border-bottom: 5px dotted blue;
+        border-radius: 21px; */
+        font-size: 25px;
+
+    
+    }
+    .image {
+        /* padding-left: 150px; */
+        position: relative;
+        /* float: right; */
+        line-height: 8px;
+        margin-left: 160px;
+        margin-top: -340px;
+        overflow-x: hidden;
+
+        
+
+
+    
+    }
+    .banner-title {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 80px;
+    }
+    .banner-description {
+        font-size: 16px;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 20px;
+        /* margin-top: 15px; */
+        flex-wrap: nowrap;
+        word-wrap: none;
+    
+    }
+    #simple-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+              /* background-color: rgba(255, 255, 255, 0.1);
+           /* border: .09px solid white; */
+              /* border-radius: 12px;
+           padding: 30px 0px; */
+        gap: 25px;
+              /* width: 150px; */
+              /* height: 90px; */
+        border: .09px solid rgba(0, 0, 0, 0.507);
+        border-radius: 12px;
+        width: 225px;
+        height: 110px;
+        margin-left: 0;
+        margin-top: -280px;
+        margin-right: -100px;
+    
+    }
+    .second-card {
+        position: relative;
+        left: 200px;
+        top: -395px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.152);
+        opacity: 90%;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: #EFEDE8;
+        width: 193px;
+        height: 120px;
+        margin: 2px 10px;
+    
+    
+    }
+    .numbers {
+        color: #FAFAF9;
+        font-size: 2.8rem;
+        font-weight: bold;
+        justify-items: center;
+        align-items: center;
+        line-height: 75px;
+        margin: 0 24px;
+        /* padding: 5px; */
+    
+        text-align: start;
+    }
+    .second-tutorial {
+        margin: 0 24px;
+        font-size: 1.rem;
+        /* padding: 5px; */
+    }
+
+    
+    
+
+
+}
+@media screen and (max-width: 576px) {
+   .display-flex{
+    display: block;
+    /* font-size: 3rem;
+    margin-left: 0; */
+    list-style: none;
+    line-height: 20px;
+    height: 860px;
+    /* background: rgba(0, 0, 0, 0.902); */
+    margin-bottom: 100px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+   }
+   .banner-title{
+    font-size: 2rem;
+    margin-left: 0;
+    padding-left: 5px;
+    align-items: flex-end;
+
+   }
+   .banner-content {
+       /* max-width: 445px;
+    text-align: start; */
+       color: #FFFFFF;
+       font-size: 35px;
+       line-height: 50px;
+       padding: 0 9px;
+       font-weight: bold;
+
+   }
+   .banner-content p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    position: relative;
+    top: 20px;
+    left: 5px;
+    width: 50%;
+   }
+   .image{
+    margin-top: 25px;
+    height: 880px;
+   }
+   #simple-card {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       /* background-color: rgba(255, 255, 255, 0.1);
+       /* border: .09px solid white; */
+       /* border-radius: 12px;
+       padding: 30px 0px; */
+       gap: 25px; 
+       /* width: 150px; */
+       /* height: 90px; */
+       border: .09px solid rgba(0, 0, 0, 0.507);
+       border-radius: 12px;
+       width: 175px;
+       height: 80px;
+       margin-left: 0;
+       margin-top: -350px;
+       margin-right: -120px;
+       
+   }
+   .numbers {
+       color: #FAFAF9;
+       font-size: 2.2rem;
+       font-weight: bold;
+       justify-items: center;
+       align-items: center;
+       margin: 0 6px;
+       /* padding: 5px; */
+       
+       text-align: start;
+   }
+   .second-tutorial{
+    margin: 0 6px;
+    /* padding: 5px; */
+   }
+   #column {
+       /* display: flex;
+       flex-direction: column;
+       margin-right: -50px; */
+
+   }
+   .second-card {
+       position: relative;
+       left: 190px;
+       top: -275px;
+       background-color: rgba(255, 255, 255, 0.1);
+       border: 1px solid rgba(255, 255, 255, 0.152);
+       opacity: 90%;
+       border-radius: 12px;
+       font-size: 0.7rem;
+       font-weight: 400;
+       color: #EFEDE8;
+       width: 123px;
+       height: 70px;
+
+
+   }
+   .second-column{
+    font-size: 65px;
+   }
+    .display-flex {
+  
+        height: 892px;
+    
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    #simple-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        * border: .09px solid white; */
+        /* border-radius: 12px;
+        padding: 30px 0px; */
+        gap: 25px;
+        /* width: 150px; */
+        /* height: 90px; */
+        border: .09px solid rgba(0, 0, 0, 0.507);
+        border-radius: 12px;
+        width: 175px;
+        height: 80px;
+        margin-left: -80px;
+        margin-top: -180px;
+        margin-right: -70px;
+        overflow-x: hidden;
+    
+    }
+    .second-card {
+        position: relative;
+        left: 198px;
+        top: -405px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.152);
+        opacity: 90%;
+        border-radius: 12px;
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #EFEDE8;
+        width: 123px;
+        height: 70px;
+    
+    
+    }
+    .second-tutorial {
+        margin: 0 6px;
+        /* padding: 5px; */
+    }
+    .numbers{
+        margin: 0 6px;
+        line-height: 45px;
+    }
+
+ */
+ /* habbits section responsive */
+@media screen and (max-width: 576px){
+    .img-container{
+        display: columns;
+        
+    }
+}
